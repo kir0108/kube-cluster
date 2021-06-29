@@ -1,0 +1,22 @@
+{
+  "jenkins": {
+	"login": "jenkins",
+    "static_ip": "192.168.10.255",
+	"dynamic_ip": "192.168.1.64",
+    "pwd": "777"
+  }
+  "master": {
+    "login": "master",
+    "static_ip": "192.168.10.11",
+	"dynamic_ip": "192.168.1.40",
+    "pwd": "777"
+  },
+  "workers": [
+    {
+      "login": "worker",
+      "static_ip": "192.168.10.12",
+	  "dynamic_ip": "192.168.1.191",
+      "pwd": "777"
+    }
+  ]
+}
