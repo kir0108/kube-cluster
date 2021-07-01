@@ -44,6 +44,15 @@ expect {
  send "cp /master-init/rc.local /etc\r"
  expect "#"
 
+ send "export GIT_LOGIN=$git_login\r"
+ expect "#"
+
+ send "export GIT_PASSWORD=$git_pwd\r"
+ expect "#"
+
+ send "export NODE_IP=$master_ip_static\r"
+ expect "#"
+
  send "sed -i '$ a export GIT_LOGIN=$git_login' /.bashrc \r"
  expect "#"
 
