@@ -38,10 +38,10 @@ expect {
  send "cd /\r"
  expect \"*#\"
 
- send "git clone https://github.com/kir0108/master-init\r"
+ send "git clone https://github.com/kir0108/worker-init\r"
  expect \"*#\"
 
- send "cp /master-init/rc.local /etc\r"
+ send "cp /worker-init/rc.local /etc\r"
  expect \"*#\"
 
  send "export GIT_LOGIN=$git_login\r"
@@ -76,5 +76,5 @@ expect {
 
  set timeout -1
 
- send "sh /master-init/swapoff-script.sh \r"
+ send "sh /worker-init/swapoff-script.sh \r"
  expect \"*#\"
