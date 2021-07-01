@@ -4,7 +4,7 @@
     "static_ip": "192.168.10.255",
 	"dynamic_ip": "192.168.1.64",
     "pwd": "777"
-  }
+  },
   "master": {
     "login": "master",
     "static_ip": "192.168.10.11",
