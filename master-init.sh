@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "test"
-./test.sh
+sh /var/lib/jenkins/workspace/qwe/test.sh
 
 echo "master con"
-./master-connect.sh
+./var/lib/jenkins/workspace/qwe/master-connect.sh
