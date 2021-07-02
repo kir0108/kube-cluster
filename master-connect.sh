@@ -71,6 +71,8 @@ expect {
  send "sed -i '$ a export NODE_IP=$master_ip_static' /etc/rc.local \r"
  expect \"*#\"
 
+ set timeout 20
+
  send "apt install expect -y \r"
  expect \"root@*\"
 
